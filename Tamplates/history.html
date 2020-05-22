@@ -31,45 +31,394 @@
 {% endblock navbar %}
    {% block content %}
          
-     
-         <div class="container mt-4 "id="chart" style="width:80%; height:300px; ">
-         
+     <br>
+   <br>
+        <div class="container">
+        
+            <p>
+                <button class="btn btn-success" style="width:100%" type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp11" aria-expanded="false" aria-controls="SoilmoistureSensorEsp11">Soilmoisture Sensor Esp11</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp11">
+                  <div class=""style="overflow-x:auto;overflow-y:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          
+                          <tbody>
+                            {% for esp in esp_11 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                                              
+                            </tr>
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div>
+        <div class="container">
+        
+            <p>
+                <button class="btn btn-success" style="width:100%" type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp12" aria-expanded="false" aria-controls="SoilmoistureSensorEsp12">Soilmoisture Sensor Esp12</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp12">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                           {% for esp in esp_12 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+       
+            <p>
+                <button class="btn btn-success"style="width:100%" type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp21" aria-expanded="false" aria-controls="SoilmoistureSensorEsp21">Soilmoisture Sensor Esp21</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp21">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                           {% for esp in esp_21 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+   
+            <p>
+                <button class="btn btn-success" style="width:100%"type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp22" aria-expanded="false" aria-controls="SoilmoistureSensorEsp22">Soilmoisture Sensor Esp22</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp22">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                              {% for esp in esp_22 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container">
            
-    
+            <p>
+                <button class="btn btn-success" style="width:100%"type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp31" aria-expanded="false" aria-controls="SoilmoistureSensorEsp31">Soilmoisture Sensor Esp31</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp31">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                              {% for esp in esp_31 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          
+                            
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         <div class="container">
+          
+            <p>
+                <button class="btn btn-success"style="width:100%" type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp32" aria-expanded="false" aria-controls="SoilmoistureSensorEsp32">Soilmoisture Sensor Esp32</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp32">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                           {% for esp in esp_32 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         <div class="container">
+          
+            <p>
+                <button class="btn btn-success" style="width:100%"type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp41" aria-expanded="false" aria-controls="SoilmoistureSensorEsp41">Soilmoisture Sensor Esp41</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp41">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                               {% for esp in esp_41 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          
+                            </tr>
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          <div class="container">
+           
+            <p>
+                <button class="btn btn-success" style="width:100%"type="button" data-toggle="collapse" data-target="#SoilmoistureSensorEsp42" aria-expanded="false" aria-controls="SoilmoistureSensorEsp42">Soilmoisture Sensor Esp42</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="SoilmoistureSensorEsp42">
+                  <div class=""style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">Topic</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Value</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                          {% for esp in esp_42 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.moisturevalue}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+     
+            <p>
+                <button class="btn btn-success" style="width:100%" type="button" data-toggle="collapse" data-target="#AirDustParticalsEsp41" aria-expanded="false" aria-controls="AirDustParticalsEsp41">Air Dust Particals Esp41</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="AirDustParticalsEsp41">
+                  <div class=""  style="overflow-x:auto;">
+                        <table class="table table-dark">
+                          <thead>
+                                <tr>
+                                  <th scope="col">Topic</th>
+                                  <th scope="col">Status</th>
+                                  <th scope="col">PM03</th>
+  		                            <th scope="col">PM05</th>
+                                  <th scope="col">PM10</th>
+                                  <th scope="col">PM25</th>
+                                  <th scope="col">PM50</th>
+                                  <th scope="col">PM100</th>
+
+                                </tr>
+                          </thead>
+                          <tbody>
+                               {% for esp in esp_41 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.pm03}}</td>
+                                    <td>{{esp.pm05}}</td>
+                                    <td>{{esp.pm10}}</td>
+                                    <td>{{esp.pm25}}</td>
+                                    <td>{{esp.pm50}}</td>
+                                    <td>{{esp.pm100}}</td>
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         <div class="container">
+     
+            <p>
+                <button class="btn btn-success" style="width:100%" type="button" data-toggle="collapse" data-target="#TemperatureAndHumidity" aria-expanded="false" aria-controls="TemperatureAndHumidity">Temperature And Humidity Esp41</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="TemperatureAndHumidity">
+                  <div  style="overflow-x:scroll;">
+                        <table class="table table-dark" >
+                          <thead>
+                              <tr>
+                                <th scope="col">Topic</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Temperature</th>
+                                <th scope="col">Humidity</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                                {% for esp in esp_41 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.temperatureEsp}}</td>
+                                    <td>{{esp.humidity}}</td>
+                                   
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                     </table>
+                  </div>
+
+              </div>
+            </div>
+        </div>
+        <div class="container">
+     
+            <p>
+                <button class="btn btn-success" style="width:100%" type="button" data-toggle="collapse" data-target="#Soiltemperature" aria-expanded="false" aria-controls="Soiltemperature">Soiltemperature Esp41</button>
+            </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="Soiltemperature">
+                  <div  style="overflow-x:scroll;">
+                        <table class="table table-dark" >
+                          <thead>
+                              <tr>
+                                <th scope="col">Topic</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">TemperatureC</th>
+                                <th scope="col">TemperatureF</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                                {% for esp in esp_41 %}
+                                <tr>
+                                    <td>{{esp.topic}}</td>
+                                    <td>{{esp.status}}</td>
+                                    <td>{{esp.soiltempC}}</td>
+                                    <td>{{esp.soiltempF}}</td>
+                                   
+                                </tr>
+                            
+                            {% endfor %}
+                          </tbody>
+                     </table>
+                  </div>
+
+              </div>
+            </div>
         </div>
         
-     
-     <script src="{% static 'jQuery.js' %}"></script> 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
-    <script src=" {% static 'echarts.js' %}"></script>
-    <script>
-  
-    var dom = document.getElementById("chart");
-    var myChart = echarts.init(dom);
-    var app = {};
-    option = null;
-    option = {
-      title:{
-        text:'soilmoisture row 1'
-      },
-    xAxis: {
-        type: 'category',
-        data: ['mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-    },
-    yAxis: {
-        type: 'value'
-    },
-    series: [{
-        data: [20, 32, 01, 34,90, 30, 20],
-        type: 'line'
-    }]
-};
-;
-if (option && typeof option === "object") {
-    myChart.setOption(option, true);
-}
-</script>
    
    {% endblock content %}

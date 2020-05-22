@@ -36,8 +36,8 @@ def login(request):
         user = auth.authenticate(username=userlog,password=passlog)
         if user is not None:# checking that user is authenticatied of not
             auth.login(request,user)
-            request.session['is_login'] = True #if user is authenticate user then redirect him to camera page
-            return redirect("camera")
+            request.session['is_login'] = True # here we are starting a session
+            return redirect("camera")#if user is authenticate user then redirect him to camera page
         else:
             return redirect('login')
     else:
@@ -83,8 +83,26 @@ def airdust(request):#For airdust page
         return redirect('login')
     
 def history(request):#For history page 
-    if request.session.has_key('is_login'):    
-        return render(request,'history.html')
+    if request.session.has_key('is_ogin'):
+        #code for accessing the data in the database 
+        esp_11=esp11.objects.all() 
+        esp_12=esp12.objects.all()
+        esp_21=esp21.objects.all()
+        esp_22=esp22.objects.all()
+        esp_31=esp31.objects.all()
+        esp_32=esp32.objects.all()
+        esp_41=esp41.objects.all()
+        esp_42=esp42.objects.all()     
+        return render(request,'history.html',
+        {'esp_11':esp_11,
+        'esp_12':esp_12,
+        'esp_21':esp_21,
+        'esp_22':esp_22,
+        'esp_31':esp_31,
+        'esp_32':esp_32,
+        'esp_41':esp_41,
+        'esp_42':esp_42,
+        })
     else:
         return redirect('login')
     
@@ -150,5 +168,5 @@ def temp(request):#temp is for taking data form api and storing it to the data b
     esp42Data.save()
     return JsonResponse(data)# returning json reponse to the HTMl 
 
-#Code for account creation form
+
 

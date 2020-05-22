@@ -14,13 +14,13 @@
             function AutoRefresh( t ) {
                setTimeout("location.reload(true);", t);
             }
-        {% comment %} onload = "JavaScript:AutoRefresh(15000);" {% endcomment %}
+        
       </script> 
   </head>
 
 
   <body >
-   <nav class="navbar navbar-expand-lg navbar-light bg-success">
+   <nav class="navbar navbar-expand-lg navbar-light bg-success" onload = "JavaScript:AutoRefresh(15000);>
             <a class="navbar-brand " href="camera">Green House</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
